@@ -1,7 +1,7 @@
 export default function App() {
   return (
     <div className="App">
-      <h1>LMS</h1>
+      <h1>Tech Web</h1>
     </div>
   );
 }
