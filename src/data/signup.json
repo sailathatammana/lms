@@ -1,0 +1,26 @@
+[
+  {
+    "key": "name",
+    "label": "Name",
+    "placeholder": "John",
+    "type": "text"
+  },
+  {
+    "key": "city",
+    "label": "City",
+    "placeholder": "Stockholm",
+    "type": "text"
+  },
+  {
+    "key": "email",
+    "label": "Email",
+    "placeholder": "john@gmail.com",
+    "type": "email"
+  },
+  {
+    "key": "password",
+    "label": "Password",
+    "placeholder": "********",
+    "type": "password"
+  }
+]

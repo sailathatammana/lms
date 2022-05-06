@@ -14,7 +14,6 @@
 .logo svg {
   transform: rotate(0deg);
   transition: 600ms;
-  color: var(--color-pink);
 }
 .nav-link svg {
   width: 2rem;

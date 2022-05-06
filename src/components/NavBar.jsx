@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import { FaBookOpen } from "react-icons/fa";
 import { FaVideo } from "react-icons/fa";
 import { FaCalendarAlt } from "react-icons/fa";
@@ -9,28 +11,38 @@ export default function NavBar() {
     <nav className="navbar">
       <ul className="navbar-nav">
         <li className="logo">
-          <span className="nav-link">
+          <NavLink to="/" className="nav-link">
             <span className="link-text logo-text">Tech Web</span>
             <MdDoubleArrow />
-          </span>
+          </NavLink>
         </li>
         <li>
-          <span className="nav-link">
+          <a href="/student" className="nav-link">
             <FaBookOpen />
             <span className="link-text">Courses</span>
-          </span>
+          </a>
         </li>
         <li>
-          <span className="nav-link">
+          <a
+            href="https://zoom.us/"
+            className="nav-link"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaVideo />
             <span className="link-text">Zoom</span>
-          </span>
+          </a>
         </li>
         <li>
-          <span className="nav-link">
+          <a
+            href="https://calendar.google.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="nav-link"
+          >
             <FaCalendarAlt />
             <span className="link-text">Calendar</span>
-          </span>
+          </a>
         </li>
         <li>
           <span className="nav-link">
