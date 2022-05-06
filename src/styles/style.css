@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import "./_base/layout.css";
+@import "./_base/typography.css";
+@import "./_base/variables.css";
+@import "./components/navbar.css";
