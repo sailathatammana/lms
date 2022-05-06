@@ -20,7 +20,6 @@ export async function createAccount(email, password) {
     account.isCreated = true;
     account.payload = userCredential.user.uid;
   } catch (error) {
-    console.error("authentification.js error", error);
     account.payload = error.code;
   }
 
@@ -39,7 +38,6 @@ export async function signIn(email, password) {
     account.isLogged = true;
     account.payload = userCredential.user.uid;
   } catch (error) {
-    console.error("authentification.js error", error);
     account.payload = error.code;
   }
 
@@ -54,7 +52,6 @@ export async function logout() {
     account.isLoggout = true;
     account.payload = "Logout successfully";
   } catch (error) {
-    console.error("authentification.js error", error);
     account.payload = error.code;
   }
 

@@ -28,7 +28,7 @@ export default function SignUp() {
     dispatchUser({ type: "SET_USER", payload: newUser });
     setIsLogged(true);
     setValues({});
-    navigate.push("/");
+    navigate("/");
   }
 
   function onFailure(message) {

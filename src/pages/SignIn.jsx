@@ -14,6 +14,7 @@ import { getDocument } from "../scripts/firestore";
 export default function SignIn() {
   const [values, handleChange, setValues] = useForm();
   const { dispatchUser } = useUser();
+  const { dispatchUid } = useAuth();
   const { setIsLogged } = useAuth();
   const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState("");
@@ -32,7 +33,7 @@ export default function SignIn() {
 
     dispatchUser({ type: "SET_USER", payload: document });
     setIsLogged(true);
-    navigate.push("/");
+    navigate("/");
   }
 
   function onFailure(message) {
