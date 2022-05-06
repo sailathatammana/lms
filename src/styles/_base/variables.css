@@ -1,11 +1,13 @@
 :root {
   /* Colors */
+  --color-black: black;
   --color-blue: #1e68fc;
   --color-blue-light: #4893eb;
   --color-pink: #eb4868;
   --color-pink-light: #fdecec;
   --color-gray-dark: #dbdbdb;
   --color-gray-light: #fafafa;
+  --color-gray: #f5f7fa;
 
   /* Fonts */
   --font-family: "Poppins";
