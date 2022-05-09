@@ -1,4 +1,7 @@
+//Npm package
 import { Link } from "react-router-dom";
+
+//Project files
 import CourseCard from "../components/CourseCard";
 import { useCourse } from "../state/CoursesProvider";
 import { deleteDocument } from "../scripts/firestore";

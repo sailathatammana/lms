@@ -1,6 +1,9 @@
+//Npm package
+import { Link } from "react-router-dom";
+
+//Project files
 import LoginNavBar from "../components/LoginNavBar";
 import hero from "../assets/Hero.jpg";
-import { Link } from "react-router-dom";
 
 export default function Landing() {
   return (

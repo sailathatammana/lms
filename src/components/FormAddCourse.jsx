@@ -69,6 +69,7 @@ export default function FormAddCourse() {
     dispatchCourses({ type: "UPDATE_COURSE", payload: updatedCourse });
     alert("Course updated");
   }
+
   return (
     <div>
       <p>

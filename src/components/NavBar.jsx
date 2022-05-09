@@ -1,5 +1,7 @@
+//NPM Packages
 import { NavLink, useHistory } from "react-router-dom";
 
+//Icons
 import { FaBookOpen } from "react-icons/fa";
 import { FaVideo } from "react-icons/fa";
 import { FaCalendarAlt } from "react-icons/fa";

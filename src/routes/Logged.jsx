@@ -7,7 +7,6 @@ import SignUp from "../pages/SignUp";
 import Dashboard from "../pages/Dashboard";
 import FormAddCourse from "../components/FormAddCourse";
 import CoursePage from "../pages/CoursePage";
-
 import NavBar from "../components/NavBar";
 
 export default function Logged() {

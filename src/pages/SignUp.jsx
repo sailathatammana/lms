@@ -1,5 +1,8 @@
+//Npm package
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
+
+//Project files
 import InputField from "../components/InputField";
 import signup from "../data/signup.json";
 import useForm from "../utlis/useForm";
@@ -15,6 +18,7 @@ export default function SignUp() {
   const { dispatchUser } = useUser();
   const history = useHistory();
 
+  //Methods
   async function handleSubmit(event) {
     event.preventDefault();
     const account = await createAccount(values.email, values.password);
@@ -37,6 +41,7 @@ export default function SignUp() {
   const inputFields = signup.map((input) => (
     <InputField options={input} handleChange={handleChange} values={values} />
   ));
+
   return (
     <div>
       <h1>SignUp</h1>

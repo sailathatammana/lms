@@ -15,7 +15,6 @@ export default function App() {
   const { uid, setIsLogged, isLogged } = useAuth();
   const { dispatchUser } = useUser();
   const { dispatchCourses } = useCourse();
-
   // Local state
   const [status, setStatus] = useState(1); // 0 pending, 1 ready, 2 error
 
