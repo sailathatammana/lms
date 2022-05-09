@@ -1,12 +1,23 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import { FaBookOpen } from "react-icons/fa";
 import { FaVideo } from "react-icons/fa";
 import { FaCalendarAlt } from "react-icons/fa";
 import { GrLogout } from "react-icons/gr";
 import { MdDoubleArrow } from "react-icons/md";
+import { useAuth } from "../state/AuthProvider";
+import { logout } from "../scripts/Authentication";
 
 export default function NavBar() {
+  const { setIsLogged } = useAuth();
+  const navigate = useNavigate();
+  async function onLogout() {
+    const account = await logout();
+
+    console.log("Home.jsx account", account);
+    setIsLogged(false);
+    navigate("/sign-in");
+  }
   return (
     <nav className="navbar">
       <ul className="navbar-nav">
@@ -45,10 +56,10 @@ export default function NavBar() {
           </a>
         </li>
         <li>
-          <span className="nav-link">
+          <button onClick={onLogout} className="nav-link">
             <GrLogout />
             <span className="link-text">SignOut</span>
-          </span>
+          </button>
         </li>
       </ul>
     </nav>
