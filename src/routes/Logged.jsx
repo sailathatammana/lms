@@ -5,6 +5,7 @@ import { Route } from "react-router-dom";
 import SignIn from "../pages/SignIn";
 import SignUp from "../pages/SignUp";
 import Dashboard from "../pages/Dashboard";
+import FormAddCourse from "../components/FormAddCourse";
 
 import NavBar from "../components/NavBar";
 
@@ -15,6 +16,7 @@ export default function Logged() {
       <Route component={Dashboard} path="/" />
       <Route component={SignIn} path="/sign-in" />
       <Route component={SignUp} path="/sign-up" />
+      <Route component={FormAddCourse} path="/add-course" />
     </>
   );
 }

@@ -12,9 +12,7 @@ export default function NavBar() {
   const { setIsLogged } = useAuth();
   const history = useHistory();
   async function onLogout() {
-    const account = await logout();
-
-    console.log("Home.jsx account", account);
+    await logout();
     setIsLogged(false);
     history.push("/sign-in");
   }

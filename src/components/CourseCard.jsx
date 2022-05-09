@@ -1,7 +1,11 @@
-export default function CourseCard() {
+export default function CourseCard({ course }) {
+  const { name, description } = course;
   return (
     <div>
-      <h3>CourseCard</h3>
+      <li>
+        <h3>{name}</h3>
+        <p>{description}</p>
+      </li>
     </div>
   );
 }
