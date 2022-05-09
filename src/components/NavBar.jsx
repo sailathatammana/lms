@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 
 import { FaBookOpen } from "react-icons/fa";
 import { FaVideo } from "react-icons/fa";
@@ -10,13 +10,13 @@ import { logout } from "../scripts/Authentication";
 
 export default function NavBar() {
   const { setIsLogged } = useAuth();
-  const navigate = useNavigate();
+  const history = useHistory();
   async function onLogout() {
     const account = await logout();
 
     console.log("Home.jsx account", account);
     setIsLogged(false);
-    navigate("/sign-in");
+    history.push("/sign-in");
   }
   return (
     <nav className="navbar">

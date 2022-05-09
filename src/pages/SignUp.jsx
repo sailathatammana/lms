@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import InputField from "../components/InputField";
 import signup from "../data/signup.json";
 import useForm from "../utlis/useForm";
@@ -13,7 +13,7 @@ export default function SignUp() {
   const [values, handleChange, setValues] = useForm();
   const { setIsLogged } = useAuth();
   const { dispatchUser } = useUser();
-  const navigate = useNavigate();
+  const history = useHistory();
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -28,7 +28,7 @@ export default function SignUp() {
     dispatchUser({ type: "SET_USER", payload: newUser });
     setIsLogged(true);
     setValues({});
-    navigate("/");
+    history.push("/");
   }
 
   function onFailure(message) {

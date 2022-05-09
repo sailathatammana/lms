@@ -51,6 +51,7 @@
   height: 5rem;
   text-decoration: none;
   border: none;
+  background-color: var(--color-gray);
   cursor: pointer;
 }
 

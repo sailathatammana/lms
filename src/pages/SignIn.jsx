@@ -1,6 +1,6 @@
 //NPM packages
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 //Project files
 import signin from "../data/signin.json";
@@ -12,11 +12,10 @@ import { signIn } from "../scripts/Authentication";
 import { getDocument } from "../scripts/firestore";
 
 export default function SignIn() {
-  const [values, handleChange, setValues] = useForm();
+  const [values, handleChange] = useForm();
   const { dispatchUser } = useUser();
-  const { dispatchUid } = useAuth();
   const { setIsLogged } = useAuth();
-  const navigate = useNavigate();
+  const history = useHistory();
   const [errorMessage, setErrorMessage] = useState("");
 
   //Methods
@@ -33,7 +32,7 @@ export default function SignIn() {
 
     dispatchUser({ type: "SET_USER", payload: document });
     setIsLogged(true);
-    navigate("/");
+    history.push("/");
   }
 
   function onFailure(message) {
@@ -48,6 +47,7 @@ export default function SignIn() {
       <h1>SignIn</h1>
       <form onSubmit={handleSubmit}>
         {inputFields}
+        {errorMessage}
         <button>Sign in</button>
       </form>
     </div>

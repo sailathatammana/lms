@@ -24,7 +24,7 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     onAuthStateChanged(authInstance, (user) => {
       if (user) dispatchUid({ type: "SET_UID", payload: user.uid });
-      else dispatchUid({ type: "SET_UID", payload: "" });
+      else dispatchUid({ type: "SET_UID", payload: "no user" });
     });
   }, []);
 
