@@ -10,17 +10,5 @@
     "label": "Description",
     "placeholder": "The Most Popular JavaScript Library",
     "type": "text"
-  },
-  {
-    "key": "files",
-    "label": "Files",
-    "placeholder": "React.pdf",
-    "type": "text"
-  },
-  {
-    "key": "links",
-    "label": "Links",
-    "placeholder": "www,youtube.com/Frsf345",
-    "type": "text"
   }
 ]

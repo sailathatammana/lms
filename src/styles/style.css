@@ -4,3 +4,4 @@
 @import "./_base/typography.css";
 @import "./_base/variables.css";
 @import "./components/navbar.css";
+@import "./components/inputImage.css";

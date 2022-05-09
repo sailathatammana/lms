@@ -14,7 +14,7 @@ export default function NavBar() {
   async function onLogout() {
     await logout();
     setIsLogged(false);
-    history.push("/sign-in");
+    history.push("/");
   }
   return (
     <nav className="navbar">

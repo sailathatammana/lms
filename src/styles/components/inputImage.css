@@ -1,0 +1,39 @@
+.image-chooser {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-chooser input[type="file"] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.image-chooser img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  background-color: var(--color-gray-dark);
+  border-radius: 12px;
+}
+
+.image-chooser span {
+  font-size: 12px;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  display: none;
+  font-weight: bold;
+}
+
+.image-chooser:hover span {
+  display: inline;
+  cursor: pointer;
+}

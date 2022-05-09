@@ -2,15 +2,14 @@
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 // Project files
-import { cloudStorageInstance } from "scripts/firebase";
+import { cloudStorageInstance } from "./firebase";
 import readImage from "./upload-image/readImage";
 import resizeImage from "./upload-image/resizeImage";
 import dataUrlToFile from "./upload-image/dataUrlToFile";
 
-export async function uploadFile(file, filename = "new-file") {
+export async function uploadFile(file, filename) {
   const storageReference = ref(cloudStorageInstance, filename);
   await uploadBytes(storageReference, file);
-
   return await getDownloadURL(storageReference);
 }
 
@@ -23,6 +22,5 @@ export async function uploadImage(event, filename) {
     `${filename}.png`
   );
   const newImageURL = await uploadFile(imageForFirebase, filename);
-
   return newImageURL;
 }

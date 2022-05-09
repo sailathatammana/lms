@@ -15,9 +15,7 @@ export default function Landing() {
           <br />
           -Jiddu Krishnamurti
         </p>
-        <Link to="/sign-up">
-          <button>Sign Up</button>
-        </Link>
+        <Link to="/sign-up">Sign Up</Link>
       </section>
       <img src={hero} alt="" />
     </div>
