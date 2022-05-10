@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import { useUser } from "../state/UserProvider";
 
 export default function CourseCard({ course, onDelete }) {
   const { id, name, description, imgUrl } = course;
+  const { user } = useUser();
 
   return (
     <div>
@@ -11,8 +13,10 @@ export default function CourseCard({ course, onDelete }) {
         <p>{description}</p>
         <Link to={`/course-page/${id}`}>Go</Link>
         <br />
-        <Link to={`/add-course/${id}`}>Edit</Link>
-        <button onClick={() => onDelete(id)}>Delete</button>
+        {user.role === "teacher" && <Link to={`/add-course/${id}`}>Edit</Link>}
+        {user.role === "teacher" && (
+          <button onClick={() => onDelete(id)}>Delete</button>
+        )}
       </li>
     </div>
   );

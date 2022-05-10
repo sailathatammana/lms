@@ -1,5 +1,6 @@
 //Npm package
 import { Link } from "react-router-dom";
+import { useUser } from "../state/UserProvider";
 
 //Project files
 import CourseCard from "../components/CourseCard";
@@ -8,6 +9,7 @@ import { deleteDocument } from "../scripts/firestore";
 
 export default function Dashboard() {
   const { courses, dispatchCourses } = useCourse();
+  const { user } = useUser();
 
   async function onDelete(id) {
     await deleteDocument("courses", id);
@@ -23,7 +25,9 @@ export default function Dashboard() {
     <div>
       <h1>CoursesPage</h1>
       <ul>{course}</ul>
-      <Link to="/add-course/new-course">Add New Course</Link>
+      {user.role === "teacher" && (
+        <Link to="/add-course/new-course">Add New Course</Link>
+      )}
     </div>
   );
 }

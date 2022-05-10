@@ -3,6 +3,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
+  sendPasswordResetEmail,
 } from "firebase/auth";
 
 // Project files
@@ -56,4 +57,8 @@ export async function logout() {
   }
 
   return account;
+}
+
+export async function resetPassword(email) {
+  return await sendPasswordResetEmail(authInstance, email);
 }

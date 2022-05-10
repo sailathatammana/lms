@@ -28,7 +28,7 @@ export default function NavBar() {
           </NavLink>
         </li>
         <li>
-          <a href="/student" className="nav-link">
+          <a href="/" className="nav-link">
             <FaBookOpen />
             <span className="link-text">Courses</span>
           </a>
