@@ -1,12 +1,11 @@
 import { useRef } from "react";
 export default function InputField({ options, handleChange }) {
-  const { label, instructions, placeholder, key, type } = options;
+  const { label, placeholder, key, type } = options;
   const inputReference = useRef(null);
   return (
     <fieldset>
       <label>
-        {instructions && <small>{instructions}</small>}
-        <b>{label}</b>
+        <span>{label}</span>
         <input
           type={type}
           ref={inputReference}

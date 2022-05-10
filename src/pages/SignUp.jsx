@@ -48,7 +48,7 @@ export default function SignUp() {
       <form onSubmit={handleSubmit}>
         {inputFields}
         {errorMessage}
-        <button>Sign Up</button>
+        <button className="button-main ">Create Account</button>
       </form>
     </div>
   );

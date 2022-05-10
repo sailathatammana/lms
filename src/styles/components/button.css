@@ -1,0 +1,39 @@
+.button-main {
+  box-sizing: border-box;
+  min-height: 44px;
+  background-color: var(--color-blue);
+  padding: 12px 30px;
+  color: white;
+  font-weight: bold;
+  font-size: var(--font-button-mobile);
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  border-style: none;
+  margin: var(--space-medium);
+  text-decoration: none;
+}
+
+.button-main:hover {
+  background-color: var(--color-blue-light);
+}
+
+.button-main::selection {
+  background-color: var(--color-red-light);
+}
+
+.button-secondary {
+  box-sizing: border-box;
+  min-height: 44px;
+  background-color: var(--color-blue-light);
+  padding: 12px 30px;
+  color: white;
+  font-weight: bold;
+  font-size: var(--font-button-mobile);
+  line-height: 22px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  border-style: none;
+  letter-spacing: 0.1em;
+  margin: var(--space-medium);
+}

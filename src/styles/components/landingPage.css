@@ -1,0 +1,16 @@
+.landing-page img {
+  width: 100%;
+}
+
+.landing-page {
+  height: 89vh;
+  padding: var(--space-big);
+}
+
+.landing-page p {
+  letter-spacing: 0.19em;
+  font-size: var(--font-title-mobile);
+  line-height: 35px;
+  text-align: left;
+  padding: var(--space-big);
+}

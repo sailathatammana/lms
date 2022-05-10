@@ -4,7 +4,9 @@ export default function LoginNavBar() {
   return (
     <nav className="landing-bar">
       <h1>Tech Web</h1>
-      <Link to="/sign-in">Sign In</Link>
+      <Link className="button-secondary" to="/sign-in">
+        Sign In
+      </Link>
     </nav>
   );
 }

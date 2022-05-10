@@ -44,15 +44,13 @@ export default function SignIn() {
     <InputField options={input} handleChange={handleChange} values={values} />
   ));
   return (
-    <div>
-      <h1>SignIn</h1>
-      <form onSubmit={handleSubmit}>
-        {inputFields}
-        {errorMessage}
-        <button>Sign in</button>
-        <Link to="/forgot-password">Forgot Password</Link>
-        <Link to="/sign-up">Sign Up</Link>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <h2>Sign In</h2>
+      {inputFields}
+      <span className="error-message">{errorMessage}</span>
+      <button className="button-main">Sign in</button>
+      <Link to="/forgot-password">Forget Password?</Link>
+      <Link to="/sign-up">Sign Up</Link>
+    </form>
   );
 }

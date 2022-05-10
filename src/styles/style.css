@@ -5,3 +5,7 @@
 @import "./_base/variables.css";
 @import "./components/navbar.css";
 @import "./components/inputImage.css";
+@import "./components/button.css";
+@import "./components/landingBar.css";
+@import "./components/landingPage.css";
+@import "./components/login.css";

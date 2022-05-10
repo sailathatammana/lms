@@ -20,11 +20,10 @@ export default function ForgotPassword() {
   }
 
   return (
-    <form>
-      <h1>Reset Password</h1>
+    <form className="reset-password">
       <p>Reset your password by typing your Email. </p>
       <label>
-        Email
+        <span>Email</span>
         <input
           type="email"
           ref={emailRef}
@@ -34,7 +33,9 @@ export default function ForgotPassword() {
       </label>
       {error}
       {message}
-      <button onClick={onReset}>Reset Password</button>
+      <button className="button-main" onClick={onReset}>
+        Reset Password
+      </button>
     </form>
   );
 }

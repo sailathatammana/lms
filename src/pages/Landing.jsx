@@ -6,8 +6,8 @@ import hero from "../assets/Hero.jpg";
 
 export default function Landing() {
   return (
-    <div>
-      <h4>Learning platform For students and teachers. </h4>
+    <div className="landing-page">
+      <h2>Learning platform For students and teachers. </h2>
       <p>
         "There is no end to education. It is not that you read a book, pass an
         examination, and finish with education. The whole of life, from the
@@ -15,8 +15,10 @@ export default function Landing() {
         <br />
         -Jiddu Krishnamurti
       </p>
-      <Link to="/sign-up">Sign Up</Link>
       <img src={hero} alt="" />
+      <Link className="button-main" to="/sign-up">
+        Sign Up
+      </Link>
     </div>
   );
 }
