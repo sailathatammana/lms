@@ -3,12 +3,14 @@
 @import "./_base/layout.css";
 @import "./_base/typography.css";
 @import "./_base/variables.css";
-@import "./components/navbar.css";
-@import "./components/inputImage.css";
+
+/* Componets */
 @import "./components/button.css";
-@import "./components/landingBar.css";
-@import "./components/landingPage.css";
-@import "./components/login.css";
 @import "./components//courseCard.css";
 @import "./components/coursePage.css";
 @import "./components/formAddCourse.css";
+@import "./components/inputImage.css";
+@import "./components/landingPage.css";
+@import "./components/login.css";
+@import "./components/loginNavBar.css";
+@import "./components/navbar.css";

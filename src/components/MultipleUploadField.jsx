@@ -1,7 +1,10 @@
+//NPM packages
 import { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
+
+//Project Files
+import FilesList from "./File/FilesList";
 import { uploadFile } from "../scripts/cloudStorage";
-import FilesList from "./FilesList";
 
 export default function MultipleUploadField({ setFiles, files }) {
   const onDrop = useCallback(
