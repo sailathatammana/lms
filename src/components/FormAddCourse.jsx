@@ -3,12 +3,12 @@ import { useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 
 //Project files
-import useForm from "../utlis/useForm";
-import { useCourse } from "../state/CoursesProvider";
-import { createDocument, updateDocument } from "../scripts/firestore";
 import InputImage from "./InputImage";
 import MultipleUploadField from "./MultipleUploadField";
 import VideoField from "./video/VideoField";
+import useForm from "../utlis/useForm";
+import { useCourse } from "../state/CoursesProvider";
+import { createDocument, updateDocument } from "../scripts/firestore";
 
 export default function FormAddCourse() {
   const { id } = useParams();
