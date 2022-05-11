@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import { uploadFile } from "../scripts/cloudStorage";
-import FilesList from "./FilesList";
+import FilesList from "./File/FilesList";
 
 export default function MultipleUploadField({ setFiles, files }) {
   const onDrop = useCallback(

@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
 import { resetPassword } from "../scripts/Authentication";
 
 export default function ForgotPassword() {

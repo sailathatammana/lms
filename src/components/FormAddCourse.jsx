@@ -8,7 +8,7 @@ import { useCourse } from "../state/CoursesProvider";
 import { createDocument, updateDocument } from "../scripts/firestore";
 import InputImage from "./InputImage";
 import MultipleUploadField from "./MultipleUploadField";
-import VideoField from "./VideoField";
+import VideoField from "./video/VideoField";
 
 export default function FormAddCourse() {
   const { id } = useParams();

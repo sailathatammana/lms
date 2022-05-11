@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 
 //Project files
 import { useCourse } from "../state/CoursesProvider";
-import FileItem from "../components/FileItem";
-import VideoItem from "../components/VideoItem";
+import FileItem from "../components/File/FileItem";
+import VideoItem from "../components/video/VideoItem";
 
 export default function CoursePage() {
   const { courses } = useCourse();
