@@ -9,3 +9,6 @@
 @import "./components/landingBar.css";
 @import "./components/landingPage.css";
 @import "./components/login.css";
+@import "./components//courseCard.css";
+@import "./components/coursePage.css";
+@import "./components/formAddCourse.css";

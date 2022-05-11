@@ -1,3 +1,4 @@
+import { ImPlus } from "react-icons/im";
 import VideosTable from "./VideosTable";
 
 export default function VideoField({ state }) {
@@ -29,6 +30,7 @@ export default function VideoField({ state }) {
       <label>
         <b>Video Name</b>
         <input
+          placeholder="React hooks"
           type="text"
           value={videoName}
           onChange={(event) => setVideoName(event.target.value)}
@@ -37,11 +39,14 @@ export default function VideoField({ state }) {
       <label>
         <b>Video Link</b>
         <input
+          placeholder="https://www.youtube.com/"
           type="text"
           value={videoLink}
           onChange={(event) => setVideoLink(event.target.value)}
         />
-        <button onClick={(event) => onSubmit(event)}>Add Link</button>
+        <button className="round-btn" onClick={(event) => onSubmit(event)}>
+          <ImPlus />
+        </button>
       </label>
       {video}
     </fieldset>

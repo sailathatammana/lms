@@ -6,12 +6,14 @@ import { useUser } from "../state/UserProvider";
 import CourseCard from "../components/CourseCard";
 import { useCourse } from "../state/CoursesProvider";
 import { deleteDocument } from "../scripts/firestore";
+import { ImPlus } from "react-icons/im";
 
 export default function Dashboard() {
   const { courses, dispatchCourses } = useCourse();
   const { user } = useUser();
 
   async function onDelete(id) {
+    prompt("Are you sure want to delete?");
     await deleteDocument("courses", id);
     const updated = courses.filter((course) => course.id !== id);
     alert("deleted");
@@ -22,11 +24,15 @@ export default function Dashboard() {
     <CourseCard key={course.id} onDelete={onDelete} course={course} />
   ));
   return (
-    <div>
-      <h1>CoursesPage</h1>
+    <div className="courses-page">
+      <h2>Courses</h2>
       <ul>{course}</ul>
       {user.role === "teacher" && (
-        <Link to="/add-course/new-course">Add New Course</Link>
+        <section className="round-btn">
+          <Link to="/add-course/new-course">
+            <ImPlus />
+          </Link>
+        </section>
       )}
     </div>
   );

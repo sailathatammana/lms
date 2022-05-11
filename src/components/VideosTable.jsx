@@ -1,3 +1,5 @@
+import { ImBin } from "react-icons/im";
+
 export default function VideosTable({ data, setVideosList }) {
   const { name, link } = data;
 
@@ -7,22 +9,16 @@ export default function VideosTable({ data, setVideosList }) {
   }
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Link</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{name}</td>
-          <td>{link}</td>
-          <td>
-            <button onClick={(event) => onDelete(event)}>Delete</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <tbody>
+      <tr>
+        <td>{name}</td>
+        <td>{link}</td>
+        <td>
+          <button className="delete-btn" onClick={(event) => onDelete(event)}>
+            <ImBin />
+          </button>
+        </td>
+      </tr>
+    </tbody>
   );
 }

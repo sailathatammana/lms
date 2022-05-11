@@ -8,6 +8,7 @@
   --color-gray-dark: #dbdbdb;
   --color-gray-light: #fafafa;
   --color-gray: #f5f7fa;
+  --color-red: red;
 
   /* Fonts */
   --font-family: "Poppins";
@@ -24,4 +25,5 @@
   --space-big: 24px;
   --space-medium: 16px;
   --space-small: 8px;
+  --space-bigger: 32px;
 }

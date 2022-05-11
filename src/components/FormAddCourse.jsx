@@ -71,18 +71,18 @@ export default function FormAddCourse() {
   }
 
   return (
-    <div>
-      <p>
-        Create new course by adding videos, slides, pdf and assignments for your
-        students.
-      </p>
+    <div className="add-course">
       <form>
+        <p>
+          Create new course by adding videos, slides, pdf and assignments for
+          your students.
+        </p>
         <InputImage
           imgUrl={values.imgUrl || course.imgUrl}
           onChange={onChange}
         />
         <label>
-          Course Name
+          <span>Course Name</span>
           <input
             placeholder="React"
             type="text"
@@ -91,7 +91,7 @@ export default function FormAddCourse() {
           />
         </label>
         <label>
-          Description
+          <span>Description</span>
           <input
             placeholder="The Most Populer JavaScript Library "
             type="text"
@@ -112,7 +112,12 @@ export default function FormAddCourse() {
             setVideosList,
           ]}
         />
-        <button onClick={(event) => onSave(event)}>Submit</button>
+        <button className="button-main" onClick={(event) => onSave(event)}>
+          Submit
+        </button>
+        <button onClick={() => location.push("/")} className="button-secondary">
+          Cancel
+        </button>
       </form>
     </div>
   );

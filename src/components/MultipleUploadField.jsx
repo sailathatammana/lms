@@ -28,7 +28,7 @@ export default function MultipleUploadField({ setFiles, files }) {
 
   return (
     <>
-      <div {...getRootProps()}>
+      <div className="multiple-upload" {...getRootProps()}>
         <input {...getInputProps()} />
         <p>Drag and drop some files here, or click to select files</p>
       </div>

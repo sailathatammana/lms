@@ -1,0 +1,26 @@
+.add-course {
+  margin-bottom: 100px;
+}
+
+.add-course p {
+  margin-bottom: 12px;
+}
+
+.multiple-upload {
+  margin: var(--space-medium);
+  border: 4px dashed #e5e5e5;
+  padding: var(--space-medium);
+}
+
+.add-course ul {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 90%;
+}
+
+.add-course li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}

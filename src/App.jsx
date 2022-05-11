@@ -24,7 +24,6 @@ export default function App() {
       try {
         const courses = await getCollection(path);
         dispatchCourses({ type: "SET_COURSES", payload: courses });
-        // setIsLogged(true);
         setStatus(1);
       } catch {
         setStatus(2);
@@ -41,7 +40,6 @@ export default function App() {
         const user = await getDocument(path, uid);
         dispatchUser({ type: "SET_USER", payload: user });
         setIsLogged(true);
-        setStatus(1);
       }
     },
     [dispatchUser, setIsLogged]

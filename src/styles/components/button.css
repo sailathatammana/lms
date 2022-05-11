@@ -12,6 +12,7 @@
   border-style: none;
   margin: var(--space-medium);
   text-decoration: none;
+  max-width: 300px;
 }
 
 .button-main:hover {
@@ -36,4 +37,5 @@
   border-style: none;
   letter-spacing: 0.1em;
   margin: var(--space-medium);
+  max-width: 300px;
 }

@@ -2,6 +2,12 @@
   border-radius: 4px;
   overflow: hidden;
   position: relative;
+  margin-bottom: var(--space-big);
+}
+.input-image {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
 }
 
 .image-chooser input[type="file"] {
@@ -14,12 +20,11 @@
 }
 
 .image-chooser img {
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   cursor: pointer;
   background-color: var(--color-gray-dark);
-  border-radius: 12px;
 }
 
 .image-chooser span {

@@ -12,7 +12,7 @@ import NavBar from "../components/NavBar";
 export default function Logged() {
   return (
     <>
-      <Route component={NavBar} />
+      <NavBar />
       <Route component={Dashboard} exact path="/" />
       <Route component={SignIn} path="/sign-in" />
       <Route component={SignUp} path="/sign-up" />

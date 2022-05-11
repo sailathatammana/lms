@@ -29,6 +29,7 @@
   position: fixed;
   box-shadow: 2px -5px 15px 2px #dbdbdb;
   transition: width 200ms ease;
+  z-index: 1000;
   background-color: var(--color-gray);
 }
 
@@ -82,14 +83,5 @@
     top: 0;
     width: 5rem;
     height: 100vh;
-  }
-
-  .navbar:hover {
-    width: 10rem;
-  }
-
-  .navbar:hover .link-text {
-    display: inline;
-    transition: opacity 600ms;
   }
 }

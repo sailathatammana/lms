@@ -1,0 +1,97 @@
+.courses-page ul {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 80%;
+  margin: 12px auto;
+}
+
+.courses-page li {
+  border: 1px solid #e5e5e5;
+  margin-top: var(--space-big);
+}
+
+.courses-page {
+  margin-bottom: var(--space-big);
+  margin-top: 36px;
+  margin-bottom: 200px;
+}
+
+.courses-page img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+
+.courses-page footer {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  float: right;
+  padding: 20px 20px;
+}
+
+.round-btn {
+  background-color: var(--color-blue);
+  border-radius: 80px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25));
+}
+
+.round-btn svg {
+  color: white;
+  width: 20px;
+  height: 40px;
+  text-align: center;
+}
+.delete-btn {
+  background-color: var(--color-red);
+  border-radius: 80px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25));
+}
+
+.delete-btn svg {
+  color: white;
+  width: 20px;
+  height: 40px;
+  text-align: center;
+}
+.courses-page main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.courses-page main p {
+  margin-top: var(--space-big);
+}
+.courses-page section {
+  float: right;
+  margin: var(--space-big);
+}
+@media screen and (min-width: 650px) {
+  .courses-page ul {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 16px;
+  }
+  .courses-page li {
+    max-width: 300px;
+  }
+  @media screen and (min-width: 940px) {
+    .courses-page ul {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 30px;
+      row-gap: 16px;
+    }
+    .courses-page section {
+      float: right;
+      margin-right: 80px;
+      margin-top: 100px;
+    }
+  }
+}
