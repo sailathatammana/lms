@@ -1,70 +1,67 @@
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# 1. Tech Web
 
-In the project directory, you can run:
+Tech web is a platform where teachers can share files and links with students. Teachers can add update & delete the courses.
 
-### `npm start`
+Techer Login details: teacher@teacher.com Password: 12345678
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 2. Setup
 
-### `npm test`
+These are the instructions to run the project:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Open the terminal and navigate to the folder where this readme file is located.
+2. Install the project dependencies by typing `npm install` on the terminal.
+3. Start the project by typing `npm start` on the terminal.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 3. Project organization
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3.1 Requirement gathering
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The document submited by the fictional company as the coding test. It is highlighted using color to differenciate the functional, non-functional requrirements among other key elements.
 
-### `npm run eject`
+[Google Docs link](https://docs.google.com/document/d/1QoAxqXxT3JVGmVHMGq9-1Q3uF7JOOMCCOTkv8sHZLIo/edit)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3.2 Project spreadsheet
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+A spreadsheet with the information related to the organization of the project.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[Google Spreadsheets link](https://docs.google.com/spreadsheets/d/1WqWdMdSFkluILYdyKxlD-h6hygviPc50w5NfJoNpw1A/edit#gid=1795943980)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3.3 User Flow
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+A low detail diagram to visualize how the app will work.
 
-### Code Splitting
+[User Flow](https://whimsical.com/userflow-tech-web-Kw66wKA3dg2DmKgJmcbMzc@2Ux7TurymN1n8JQPscah)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+### 3.4 Design mockup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+A low detail mockup to visualize how the app will look.
 
-### Making a Progressive Web App
+[Figma link](https://www.figma.com/file/OKOTkz331aJC87jImgGn9L/Tech-Web?node-id=4%3A109)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+### 3.5 Component tree
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The component tree allows to visualize the overall hierarchy of the project.
 
-### Deployment
+[Component Tree](https://whimsical.com/component-tree-tech-web-5A6gqrkfWmqRRzsKdF8Cvi@2Ux7TurymMnbFcYvGj2s)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 4. Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Demo](https://techweb-lms.web.app/)
+
+---
