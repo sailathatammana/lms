@@ -10,7 +10,7 @@
 }
 .course-page h2 {
   margin-top: var(--space-big);
-  text-align: left;
+  text-align: center;
   margin-left: 40px;
   font-weight: 300;
 }
